@@ -1,0 +1,8 @@
+<a href="/" class="title" ></a>
+
+<button class="button" [routerLink]="['profile']">Profile</button>
+<button *ngIf="!isUserLoggedIn" (click)="login()">Login</button>
+<button *ngIf="isUserLoggedIn" (click)="logout()">Logout</button>
+
+
+<router-outlet></router-outlet>
